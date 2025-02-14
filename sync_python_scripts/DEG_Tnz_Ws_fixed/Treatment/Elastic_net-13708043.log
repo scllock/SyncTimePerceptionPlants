@@ -1,0 +1,21 @@
+slurmstepd: error: *** JOB 13708043 ON node025 CANCELLED AT 2024-11-25T07:54:51 ***
+
+============================
+ Job utilisation efficiency
+============================
+
+Job ID: 13708043
+Cluster: viking2.yor.alces.network
+User/Group: sl1407/clusterusers
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 16
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:00:16 core-walltime
+Job Wall-clock time: 00:00:01
+Memory Utilized: 3.93 MB
+Memory Efficiency: 0.02% of 20.00 GB
+ Requested wall clock time: 20:00:00
+    Actual wall clock time: 00:00:01
+Wall clock time efficiency: 0.0%
+           Job queued time: 00:00:29
