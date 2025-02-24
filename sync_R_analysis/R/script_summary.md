@@ -18,3 +18,5 @@ Scripts in this folder are numbered by steps in the analysis.
 -   `11_Transcriptome_plots.R` produces plots associated with transcriptome data 
 -   `12_FDA_plots.R` produces plots associated with functional data analysis section 
 -   `13_QTL_plots.R` produces plots associated with QTL analysis  
+-   `14_ecotypes.R` produces plots associated with mutational profiles of Arabidopsis ecotypes
+-   `15_splicing.R` produces plots related to alternative splicing
