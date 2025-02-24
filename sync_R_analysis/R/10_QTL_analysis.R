@@ -55,7 +55,16 @@ mapthis <- est.rf(mapthis)
 checkAlleles(mapthis, threshold=5)
 rf <- pull.rf(mapthis)
 lod <- pull.rf(mapthis, what="lod")
-plotRF(mapthis)
+plotRF(mapthis, main ="")
+
+#save
+jpeg("../../../My_Papers/photoperiod_shift/Final_paper/Github_scripts/SyncTimePerception-main/sync_R_analysis/plots/marker_linkage.svg", width = 7.2, height = 6)
+
+
+plotRF(mapthis, main ="")
+
+dev.off()
+
 # plot recombination fration
 plot(as.numeric(rf), as.numeric(lod), xlab="Recombination fraction", ylab="LOD score")
 
@@ -121,7 +130,7 @@ filtered_develop_traits <- triat[,colSums(triat[273:278,], na.rm = TRUE) != 0]
 filtered_develop_traits <- filtered_develop_traits[rowSums(filtered_develop_traits, na.rm = TRUE) != 0 ,]
 
 #save the table of triats and regions of QTLs
-write.csv(filtered_develop_traits, "QTLS_developmental_traits.csv")
+#write.csv(filtered_develop_traits, "QTLS_developmental_traits.csv")
 
 
 network <- graph_from_biadjacency_matrix(filtered_develop_traits, weighted = NULL, directed = FALSE, mode = "out")
@@ -131,7 +140,7 @@ network <- graph_from_biadjacency_matrix(filtered_develop_traits, weighted = NUL
 #need vector that is 1111, 222, 3333333, 
 
 # the node are set, this will seperate the functional traits (), developmental traits(5) and all the snps 
-catogries <- c(rep(1,66),rep(2,6), rep(3,86))
+catogries <- c(rep(1,66),rep(2,6), rep(3,95))
 
 # define color and shape mappings.
 col <- c("steelblue","darkblue", "orange")
